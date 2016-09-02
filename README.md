@@ -33,3 +33,7 @@ post end point to persist in mongodb
 
 delete & update existing fashion item in mongodb
 
+
+* /fashionItems/clearCache'
+
+should delete entire content of cache
