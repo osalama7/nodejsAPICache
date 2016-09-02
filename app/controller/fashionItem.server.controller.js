@@ -12,6 +12,20 @@ var getErrorMessage = function (err) {
 };
 
 //create a anew FashionItem
+exports.createItem = function(res, item){
+var fashionItem = new FashionItem(item);
+		fashionItem.save(function(err){
+			if(err){
+				return res.status(400).send({
+					message: getErrorMessage(err)
+				}); 
+			}else{
+				res.json(fashionItem);
+				console.log("Fashion Item " + fashionItem._id + " created");
+			}
+		});
+};
+
 exports.create = function(req, res){
 var fashionItem = new FashionItem(req.body);
 		fashionItem.save(function(err){
