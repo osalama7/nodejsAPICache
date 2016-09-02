@@ -11,7 +11,7 @@ node server
 
 API Endpoints
 
-*/fashionCacheRandomStrings
+* /fashionCacheRandomStrings
 
 creates random strings
 
@@ -19,17 +19,17 @@ creates random strings
 
 response foo: bar and caches this value
 
-*/fashionItems/:fashionItemId
+* /fashionItems/:fashionItemId
 
 returns a fashion item from db
 
 testing how it can return it from cache if it existed
 
-*/fashionItems
+* /fashionItems
 
 post end point to persist in mongodb
 
-*/fashionItems/:fashionItemId'
+* /fashionItems/:fashionItemId'
 
 delete & update existing fashion item in mongodb
 
