@@ -11,13 +11,21 @@ node server
 
 API Endpoints
 
-* /fashionCacheRandomStrings
+* /fashionItems/testingmemcache
 
-creates random strings
+creates, and gets existing cache entries
 
-* /fashionCacheFoo
+*/fashionItems/getcachedkeys
 
-response foo: bar and caches this value
+returns all existing cached keys
+
+* /fashionItems/delcachedkeys
+
+deletes all cached keys
+
+* /fashionItems/delakey
+
+deletes a memory cache item for a given key
 
 * /fashionItems/:fashionItemId
 
@@ -36,4 +44,4 @@ delete & update existing fashion item in mongodb
 
 * /fashionItems/clearCache'
 
-should delete entire content of cache
+	should delete entire content of cache
